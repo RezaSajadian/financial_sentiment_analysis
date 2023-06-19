@@ -16,11 +16,13 @@ Install the required packages using pip:
 
 pip install -r requirements.txt
 
+
 ## Usage
 
 To run the script, use the following command:
 
 python main.py
+
 
 This command fine-tunes a BERT model on the provided financial dataset and saves the training logs in `training.log`.
 
