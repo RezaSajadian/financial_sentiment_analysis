@@ -1,0 +1,20 @@
+"The company's stock skyrocketed after strong earnings report",1
+"Bank X has declared bankruptcy due to financial mismanagement",-1
+"Financial indicators suggest a stable market",0
+"Investors are concerned about the potential for a new recession",-1
+"Tech stocks are performing well amid economic uncertainty",1
+"Record profits were reported by the major banks this quarter",1
+"Renewed concerns over debt levels have investors worried",-1
+"Forecasts predict a strong year for retail",1
+"Oil prices slump as global tensions rise",-1
+"Economists predict a period of sustained growth",1
+"Analysts warn of an upcoming market correction",-1
+"Housing market continues to show strong growth",1
+"Fears of inflation have led to a volatile bond market",-1
+"The tech sector continues to outperform expectations",1
+"Rising unemployment figures paint a grim picture",-1
+"Investors are optimistic about the new merger",1
+"Uncertainty over future interest rates is causing market volatility",-1
+"Robust manufacturing numbers suggest a healthy economy",1
+"Market correction leads to investor losses",-1
+"Renewed economic optimism as job numbers rise",1
