@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 To run the script, use the following command:
 
-python main.py
+python run.py
 
 
 This command fine-tunes a BERT model on the provided financial dataset and saves the training logs in `training.log`.
@@ -31,7 +31,7 @@ This command fine-tunes a BERT model on the provided financial dataset and saves
 - `dataset.py`: Contains the `FinancialDataset` class for handling the dataset.
 - `data_processing.py`: Contains the `prepare_data` function for preparing the training and testing datasets.
 - `model.py`: Contains the `get_model` and `get_trainer` functions for getting the model and the trainer.
-- `main.py`: The main script that runs the whole process.
+- `run.py`: The main script that runs the whole process.
 
 ## Future Enhancements
 
