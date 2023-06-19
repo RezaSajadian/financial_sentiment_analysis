@@ -1,27 +1,13 @@
-
-
-from transformers import BertForSequenceClassification, TrainingArguments, Trainer
+# Import necessary libraries
+from transformers import BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 
 def get_model():
-    """Returns the BERT model for sequence classification."""
-    return BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=3)
+    # This function loads the pre-trained BERT model and prepares it for sequence classification.
+    model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
+    return model
 
-def get_trainer(model, train_dataset):
-    """Returns a Trainer instance."""
-    
-    # Define training arguments
-    training_args = TrainingArguments(
-        output_dir='./results',          
-        num_train_epochs=3,              
-        per_device_train_batch_size=16,  
-        per_device_eval_batch_size=64,   
-        warmup_steps=500,                
-        weight_decay=0.01,               
-    )
-
-    # Initialize the trainer
-    return Trainer(
-        model=model,                         
-        args=training_args,                  
-        train_dataset=train_dataset,
-    )
+def get_optimizer(model, steps):
+    # This function prepares the optimizer and the learning rate scheduler for training the model.
+    optimizer = AdamW(model.parameters(), lr=5e-5)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=steps)
+    return optimizer, scheduler
